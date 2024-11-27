@@ -17,3 +17,5 @@ npm i
 ```
 npm run dev
 ```
+
+### Stack: React + Typescript
