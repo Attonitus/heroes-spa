@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: "Roboto", serif;
+    background-color: #121212;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 1rem;
+    max-inline-size: 70rem;
+    margin: auto;
+}
+
+.btn-primary {
+    color: #121212;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    border: 1px solid white;
+
+    padding-block: .5rem;
+    font-size: 1rem;
+    padding-inline: .75rem;
+    border-radius: .5rem;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #121212;
+        color: white;
+    }
+}

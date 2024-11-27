@@ -1,0 +1,70 @@
+.active {
+    color: #485fd4;
+}
+
+.navbar {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+    block-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    block-size: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img img {
+    block-size: 3.5rem;
+    border-radius: 1rem;
+}
+
+.nav-items {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logout-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: rgb(208, 65, 65);
+    display: block;
+    font-size: 1rem;
+    padding: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.alter {
+    color: white;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        font-size: 1.25rem;
+        justify-content: space-around;
+    }
+
+    .nav-items {
+        gap: 2rem;
+    }
+}

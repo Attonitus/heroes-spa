@@ -1,0 +1,27 @@
+.hero-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-inline-size: 50rem;
+    margin: auto;
+    position: relative;
+}
+
+.page-img {
+    inline-size: 20rem;
+}
+
+.page-img img {
+    inline-size: 100%;
+    display: block;
+}
+
+.page-info {
+    inline-size: 20rem;
+    padding: 1rem;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}

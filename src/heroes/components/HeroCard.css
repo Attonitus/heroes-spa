@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid white;
+    inline-size: 20rem;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.card-img {
+    inline-size: 12rem;
+}
+
+.card-img img {
+    inline-size: 100%;
+    display: block;
+}
+
+.card-info {
+    inline-size: 10rem;
+    padding-inline: .5rem;
+}
+
+.text-gray {
+    color: rgb(108, 108, 108);
+}
+
+.link {
+    color: #485fd4;
+}
