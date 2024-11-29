@@ -11,7 +11,7 @@ export const HeroCard = ({hero}: Props) => {
     const {alter_ego, characters, id, superhero, first_appearance} = hero;
 
     return(
-        <div className="card">
+        <div className="card animate__animated animate__fadeIn">
             <div className="card-img">
                 <img src={`/assets/${id}.jpg`} alt={`Image of ${superhero}`} />
             </div>

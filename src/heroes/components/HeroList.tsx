@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { getHeroesByPublisher, publisherType } from "../helpers/getHeroesByPublisher"
 import { HeroCard } from "./HeroCard";
 import './HeroList.css';
@@ -8,7 +9,7 @@ interface Props{
 
 export const HeroList = ({publisher}: Props) => {
 
-    const heroes = getHeroesByPublisher(publisher);
+    const heroes = useMemo( () => getHeroesByPublisher(publisher), [publisher]);
 
     return(
         <ul className="cards-list">

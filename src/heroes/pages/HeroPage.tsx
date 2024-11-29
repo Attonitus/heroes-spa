@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { getHeroeById } from "../helpers/getHeroeById";
 import'./HeroPage.css';
+import { useMemo } from "react";
 
 export const HeroPage = () => { 
 
@@ -12,12 +13,12 @@ export const HeroPage = () => {
             <h1>Error: ID must be allowed!</h1>
         )
     }
-
-    const hero = getHeroeById(params.heroId);
+    const { heroId } = params;
+    const hero = useMemo(() => getHeroeById(heroId), [heroId]); 
 
     if(!hero){
         return (
-        <h1>Error: Hero with ID {params.heroId} not exist</h1>
+        <h1>Error: Hero with ID {heroId} not exist</h1>
     )}
 
     const {alter_ego, characters, first_appearance, publisher, superhero, id} = hero;
@@ -27,7 +28,7 @@ export const HeroPage = () => {
     }
 
     return(
-        <div className="hero-page">
+        <div className="hero-page animate__animated animate__bounceInLeft">
             <button className="btn-primary left" onClick={onLeft}>
                 <i className="ri-arrow-left-line"></i>
             </button>

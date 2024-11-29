@@ -1,0 +1,22 @@
+.container-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-search {
+    inline-size: 20rem;
+}
+
+.results-search {
+    inline-size: 40rem;
+    padding-inline: 1rem;
+}
+
+.heroes-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
